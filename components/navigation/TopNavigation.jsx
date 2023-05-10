@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const TopNavigation = () => {
@@ -13,9 +14,9 @@ const TopNavigation = () => {
                     </div>
                     <div className="logo">
                         <h1>
-                            <a href="index.html">
+                            <Link href="/">
                                 <img src="/assets/img/logo.png" srcSet="/assets/img/logo@2x.png 2x"  alt=""/>
-                            </a>
+                            </Link>
                         </h1>
                     </div>
                     <div className="search-row">

@@ -13,7 +13,7 @@ export default function Home() {
       <Navigation/>
       <HeroSlider/>
       <PostContainer/>
-      {/* <Flickr/> */}
+      <Flickr/>
       <Footer/>
     </>
   )
