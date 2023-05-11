@@ -14,8 +14,8 @@ const Flickr = () => {
             </div>
             <div className="flickr_gallery owl-carousel owl-theme">
                 <Swiper
-                    spaceBetween={50}
-                    slidesPerView={3}
+                    spaceBetween={10}
+                    slidesPerView={6}
                     avigation={true} modules={[Navigation]}
                 >
                     
@@ -56,7 +56,17 @@ const Flickr = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="item">
+                            <a href="#"><img className="img-fluid" src="/assets/img/f1.jpg" alt=""/></a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="item">
                             <a href="#"><img className="img-fluid" src="/assets/img/f2.jpg" alt=""/></a>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="item">
+                            <a href="#"><img className="img-fluid" src="/assets/img/f3.jpg" alt=""/></a>
                         </div>
                     </SwiperSlide>
                 </Swiper>

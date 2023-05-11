@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import TopNavigation from '../../components/navigation/TopNavigation'
 import Navigation from '../../components/navigation/Navigation'
 import HeroSlider from '../../components/sidebar/HeroSlider'

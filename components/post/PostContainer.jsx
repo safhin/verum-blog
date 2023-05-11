@@ -1,5 +1,10 @@
 import React from 'react'
 import Sidebar from '../sidebar/Sidebar'
+import AudioPost from './AudioPost'
+import QuotePost from './QuotePost'
+import VideoPost from './VideoPost'
+import ImageSlidePost from './ImageSlidePost'
+import Post from './Post'
 
 const PostContainer = () => {
   return (
@@ -30,46 +35,8 @@ const PostContainer = () => {
                         </article>
                     </div>
                 </div>
-
-                <div className="row">
-                    <div className="col-md-12">
-                        <article className="post post-aside d-flex align-items-center">
-                            <div className="post-img ">
-                                <a href="#"><img className="img-fluid" src="/assets/img/b2.jpg" alt=""/></a>
-                            </div>
-                            <div className="post-header">
-                                <h3><a href="#">Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt</a></h3>
-                                <div className="post-meta">
-                                    <ul className="cat">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                    <div className="separation"></div>
-                                    <div className="post-date"><a href="#">28th June 2018</a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-md-12">
-                        <article className="post post-aside d-flex align-items-center">
-                            <div className="post-img ">
-                                <a href="#"><img className="img-fluid" src="/assets/img/b3.jpg" alt=""/></a>
-                            </div>
-                            <div className="post-header">
-                                <h3><a href="#">Haifaa Al Mansour Brings a New Tale Set in Saudi to Venice</a></h3>
-                                <div className="post-meta">
-                                    <ul className="cat">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                    <div className="separation"></div>
-                                    <div className="post-date"><a href="#">28th June 2018</a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <Post title={'Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt'} image={'/assets/img/b2.jpg'} tags={'Travel'} date={'28th June 2018'}/>
+                <Post title={'Haifaa Al Mansour Brings a New Tale Set in Saudi to Venice'} image={'/assets/img/b3.jpg'} tags={'Travel'} date={'28th June 2018'}/>
 
                 {/* <div className="row">
                     <div className="col-md-12">
@@ -109,119 +76,13 @@ const PostContainer = () => {
                     </div>
                 </div> */}
 
-                <div className="row">
-                    <div className="col-md-12">
-                        <article className="post post-aside d-flex align-items-center">
-                            <div className="post-img position-relative">
-                                <a href="#"><img className="img-fluid" src="/assets/img/b6.jpg" alt=""/></a>
-                                <a href="https://www.youtube.com/watch?v=8SdniW2U0ho" className="play-btn popup-youtube"><i className="fa fa-play"></i></a>
-                            </div>
-                            <div className="post-header">
-                                <h3><a href="#">Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt</a></h3>
-                                <div className="post-meta">
-                                    <ul className="cat">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                    <div className="separation"></div>
-                                    <div className="post-date"><a href="#">28th June 2018</a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <VideoPost/>
+                <QuotePost/>
+                <AudioPost/>
 
+                <Post title={'Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt'} image={'/assets/img/b7.jpg'} tags={'Travel'} date={'28th June 2018'}/>
 
-                <div className="row">
-                    <div className="col-md-12">
-                        {/* quote post */}
-                        <div className=" pb-0">
-                            <article className="post post-quote d-flex align-items-center " style={{ backgroundImage: `url('/assets/img/b9.jpg')` }}>
-                                <div className="post-header">
-                                    <h3>"Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt"</h3>
-                                    <div className="mb-3">- Nathan Astle -</div>
-                                    <div className="post-meta">
-                                        <ul className="cat">
-                                            <li><a href="#">Quote</a></li>
-                                        </ul>
-                                        <div className="separation"></div>
-                                        <div className="post-date"><a href="#">28th June 2018</a></div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        {/* quote post */}
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-md-12">
-                        <article className="post post-aside d-flex align-items-center">
-                            <div className="post-img post-audio">
-                                <iframe width="100%" height="100%" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/473475024&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                            </div>
-                            <div className="post-header">
-                                <h3><a href="#">Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt</a></h3>
-                                <div className="post-meta">
-                                    <ul className="cat">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                    <div className="separation"></div>
-                                    <div className="post-date"><a href="#">28th June 2018</a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-md-12">
-                        <article className="post post-aside d-flex align-items-center">
-                            <div className="post-img ">
-                                <a href="#"><img className="img-fluid" src="/assets/img/b7.jpg" alt=""/></a>
-                            </div>
-                            <div className="post-header">
-                                <h3><a href="#">Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt</a></h3>
-                                <div className="post-meta">
-                                    <ul className="cat">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                    <div className="separation"></div>
-                                    <div className="post-date"><a href="#">28th June 2018</a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-md-12">
-                        <article className="post post-aside d-flex align-items-center">
-                            <div className="post-img">
-                                <div className="post_gallery owl-carousel owl-theme">
-                                    <div className="item">
-                                        <a href="#"><img className="img-fluid" src="/assets/img/b10.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="item">
-                                        <a href="#"><img className="img-fluid" src="/assets/img/b3.jpg" alt=""/></a>
-                                    </div>
-                                    <div className="item">
-                                        <a href="#"><img className="img-fluid" src="/assets/img/b2.jpg" alt=""/></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post-header">
-                                <h3><a href="#">Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt</a></h3>
-                                <div className="post-meta">
-                                    <ul className="cat">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                    <div className="separation"></div>
-                                    <div className="post-date"><a href="#">28th June 2018</a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <ImageSlidePost/>
 
                 <div className="row">
                     <div className="col-md-12">
